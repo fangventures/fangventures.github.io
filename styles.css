@@ -56,9 +56,6 @@ h1 { font-family: var(--head); font-size: clamp(65px, 7.55vw, 108px); line-heigh
 .feature-info > div { min-width: 0; }
 .feature-genre { color: #626c5e; font-size: 9px; text-transform: uppercase; letter-spacing: .09em; line-height: 1.7; }
 .feature-info h2 { font-family: var(--head); font-size: 27px; line-height: 1.15; letter-spacing: -.04em; font-weight: 500; margin-top: 4px; }
-.feature-link { display: inline-flex; gap: 17px; align-items: center; padding: 11px 15px; border: 1px solid #d5dbcf; border-radius: 30px; font-size: 11px; white-space: nowrap; }
-.feature-link span { font-size: 18px; }
-.feature-link:hover { color: #fff; background: var(--ink); border-color: var(--ink); }
 .feature-rocket { background: #d1e6fb; }
 .feature-icon { position: absolute; width: 45%; max-width: 256px; height: auto; left: 50%; top: 43%; transform: translate(-50%, -50%) rotate(-7deg); border-radius: 23%; box-shadow: 0 20px 40px #2b44662b; }
 .flight-orbit { position: absolute; width: 80%; aspect-ratio: 1; border: 1px solid #7093ba40; border-radius: 50%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
@@ -99,7 +96,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
 .game-meta > span:last-child { color: #b1bca8; font-size: 16px; }
 .game-body h3 { font-family: var(--head); font-size: 30px; font-weight: 500; line-height: 1.15; letter-spacing: -.04em; margin-top: 8px; }
 .game-body > p { margin-top: 11px; color: var(--muted); font-size: 13px; line-height: 1.8; max-width: 465px; }
-.game-cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 21px; padding-top: 15px; border-top: 1px solid #e7eae2; font-size: 11px; font-weight: 600; }
 .game-arrow { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid #dbe1d4; border-radius: 50%; font-size: 17px; transition: background .2s, color .2s; }
 @media (hover: hover) {
   .game-link:hover { transform: translateY(-5px); box-shadow: 0 14px 24px #243b2110; }
@@ -155,7 +151,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .feature-stage { aspect-ratio: .94; }
   .feature-info { gap: 10px; left: 15px; right: 15px; bottom: 15px; padding: 16px; }
   .feature-info h2 { font-size: 24px; }
-  .feature-link { gap: 10px; padding: 9px 11px; font-size: 10px; }
   .feature-bottom > span { max-width: 105px; line-height: 1.5; }
   .game-grid { gap: 24px; }
   .game-art { aspect-ratio: 1.45; }
@@ -177,7 +172,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .feature-stage { aspect-ratio: .82; }
   .feature-info { align-items: flex-start; }
   .feature-info h2 { font-size: 21px; }
-  .feature-link { padding: 8px; gap: 5px; }
   .feature-badge { left: 15px; top: 15px; font-size: 9px; padding: 8px 11px; }
   .feature-tabs { gap: 2px; }
   .feature-tabs button { width: 30px; height: 30px; }
@@ -215,7 +209,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .feature-info { left: 14px; right: 14px; bottom: 14px; padding: 15px; align-items: center; border-radius: 13px; gap: 13px; }
   .feature-info h2 { font-size: 24px; }
   .feature-genre { font-size: 8px; }
-  .feature-link { padding: 9px 11px; gap: 12px; font-size: 10px; }
   .feature-icon { top: 40%; width: 44%; }
   .feature-rocket .flight-orbit { top: 40%; }
   .feature-globe { top: 40%; width: 81%; }
@@ -237,7 +230,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .game-body h3 { font-size: 28px; }
   .game-meta { font-size: 8px; }
   .game-body > p { font-size: 12px; line-height: 1.8; margin-top: 10px; }
-  .game-cta { font-size: 10px; margin-top: 18px; padding-top: 13px; }
   .porch-caption { font-size: 29px; }
   .studio-section { margin-top: 40px; padding: 31px 25px; border-radius: 20px; }
   .studio-intro { align-items: flex-start; gap: 10px; }
@@ -275,7 +267,6 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .quiet-link { font-size: 10px; }
   .feature-info { padding: 12px; gap: 8px; }
   .feature-info h2 { font-size: 21px; }
-  .feature-link { padding: 8px; gap: 6px; }
   .feature-rocket .feature-icon { width: 38%; top: 36%; }
   .feature-tabs { gap: 1px; }
   .feature-tabs button { width: 30px; height: 30px; }
@@ -289,4 +280,51 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
+}
+
+.game-link { display: flex; flex-direction: column; }
+.game-image-link { display: block; flex: none; }
+.game-body { display: flex; flex-direction: column; flex: 1; }
+.game-body h3 a:hover, .feature-title-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.game-actions { margin-top: auto; padding-top: 21px; }
+.install-badge { display: inline-flex; align-items: center; gap: 12px; width: 240px; max-width: 100%; min-height: 68px; padding: 11px 16px; border: 1px solid #101310; border-radius: 12px; color: #fff; background: #101310; text-align: left; transition: background .2s, transform .2s; }
+.install-badge:hover { color: #fff; background: #304635; border-color: #304635; transform: translateY(-2px); }
+.install-badge img { width: 32px; height: 38px; object-fit: contain; flex: none; }
+.badge-copy { display: flex; flex-direction: column; gap: 1px; }
+.badge-copy > span { font-size: 10px; line-height: 1.4; letter-spacing: .015em; }
+.badge-copy > strong { font-family: var(--head); font-size: 24px; font-weight: 500; letter-spacing: -.035em; line-height: 1.15; white-space: nowrap; }
+.badge-arrow { margin-left: auto; font-size: 20px; line-height: 1; }
+.x-symbol { display: grid; place-items: center; flex: none; width: 32px; height: 38px; font-size: 30px; font-family: Arial, sans-serif; }
+.waitlist-badge .badge-copy > strong { font-size: 22px; }
+.waitlist-note, .beta-note { color: #64705d; font-size: 11px; line-height: 1.7; margin-top: 13px; max-width: 420px; }
+.waitlist-note a, .beta-note a { color: #334d36; text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+.waitlist-note a:hover, .beta-note a:hover { color: #a84630; }
+.game-details { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 19px; padding-top: 14px; border-top: 1px solid #e7eae2; font-size: 11px; font-weight: 600; }
+.game-details:hover { color: #3a6848; }
+.feature-info > div:first-child { flex: 1 1 115px; }
+.feature-info .install-badge { flex: none; width: 166px; min-height: 54px; gap: 9px; padding: 9px 12px; border-radius: 10px; }
+.feature-info .install-badge img { width: 24px; height: 29px; }
+.feature-info .badge-copy > span { font-size: 8px; }
+.feature-info .badge-copy > strong { font-size: 19px; }
+.feature-info .badge-arrow { font-size: 15px; }
+.feature-info .x-symbol { width: 24px; height: 29px; font-size: 25px; }
+.feature-info .waitlist-badge .badge-copy > strong { font-size: 17px; }
+.feature-availability { margin-top: 7px; color: #65705f; font-size: 9px; line-height: 1.4; }
+@media (max-width: 1120px) {
+  .feature-info { flex-wrap: wrap; }
+  .feature-info .install-badge { width: 158px; padding-inline: 10px; gap: 8px; }
+  .feature-info .badge-copy > strong { font-size: 18px; }
+}
+@media (max-width: 650px) {
+  .game-actions { padding-top: 20px; }
+  .game-details { font-size: 10px; }
+  .feature-info > div:first-child { flex-basis: 104px; }
+  .feature-info .install-badge { width: 158px; }
+  .waitlist-note, .beta-note { font-size: 10px; }
+}
+@media (max-width: 360px) {
+  .feature-stage { aspect-ratio: .85; }
+  .feature-info { gap: 10px; }
+  .feature-info .install-badge { width: 154px; }
+  .feature-rocket .feature-icon { width: 34%; top: 30%; }
 }
