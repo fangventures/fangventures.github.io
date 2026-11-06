@@ -13,7 +13,7 @@ Fang Ventures builds games and apps that make life better, explores frontier AI,
 ## Game studio pages
 
 - [Portfolio](https://fang.ventures/games/)
-- [Rocket Car Landing](https://fang.ventures/rocketcarlanding/)
+- [Rocket Car Landing](https://fang.ventures/rocketcarlanding/) — [Available on the App Store](https://apps.apple.com/us/app/rocket-car-landing/id6826474921)
 - [Hurricane Hero](https://fang.ventures/hurricanehero/)
 - [Arrow Neon](https://fang.ventures/arrow-neon/)
 - [Word Porch](https://fang.ventures/word-porch/)
