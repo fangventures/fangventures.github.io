@@ -130,7 +130,7 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
 .social-links a { display: inline-flex; gap: 17px; align-items: center; padding-block: 7px; }
 .social-links a:hover { color: #a84631; }
 .social-links { align-items: center; flex-wrap: wrap; }
-.social-links .contact-x {
+.social-links .contact-social {
   min-height: 48px;
   gap: 12px;
   padding: 8px 18px;
@@ -141,8 +141,8 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   font-size: 17px;
   font-weight: 600;
 }
-.contact-x svg { width: 24px; height: 24px; fill: currentColor; }
-.social-links .contact-x:hover { background: var(--paper); color: var(--ink); }
+.contact-social svg { width: 24px; height: 24px; fill: currentColor; }
+.social-links .contact-social:hover { background: var(--paper); color: var(--ink); }
 .site-footer { background: #000; color: #eeeee5; }
 .footer-top { display: flex; align-items: center; gap: 50px; padding-block: 31px; }
 .footer-top > p { font-family: var(--head); color: #b5bbae; font-size: 18px; line-height: 1.35; letter-spacing: -.02em; }
