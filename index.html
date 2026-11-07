@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-site="home">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,15 @@
   <link rel="preload" href="assets/fonts/outfit-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=5">
   <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="/theme.css?v=1">
+  <script src="/theme.js?v=1"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Fang Ventures home"><img src="assets/fangventures.png" alt="Fang Ventures" width="600" height="600"></a>
-      <nav aria-label="Main navigation"><a href="#games">Our games <span class="nav-count" aria-hidden="true">04</span></a><a href="#studio">The studio</a><a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="Main navigation"><a href="#games">Our games <span class="nav-count" aria-hidden="true">04</span></a><a href="#studio">The studio</a><a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a><label class="fv-appearance" title="Color theme"><span aria-hidden="true">◐</span><select id="fv-appearance" aria-label="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></nav>
     </div>
   </header>
   <main id="main">

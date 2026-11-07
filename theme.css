@@ -1,0 +1,155 @@
+/* Site-wide appearance. The original palettes supply one mode for each game. */
+html[data-appearance="light"] {
+  color-scheme: light;
+  --fv-browser-color: #f7f6f0;
+  --fv-surface: #fffdf9;
+  --fv-soft: #edf2ef;
+  --fv-text: #172b31;
+  --fv-secondary: #455b61;
+  --fv-rule: #c6d2ce;
+  --fv-accent: #21654d;
+}
+html[data-appearance="dark"] {
+  color-scheme: dark;
+  --fv-browser-color: #131c1b;
+  --fv-surface: #202c29;
+  --fv-soft: #283732;
+  --fv-text: #f2f5ed;
+  --fv-secondary: #bbc7bf;
+  --fv-rule: #45534c;
+  --fv-accent: #abe3c3;
+}
+.fv-appearance {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-height: 44px;
+  color: inherit;
+}
+.fv-appearance span {
+  position: absolute;
+  left: 11px;
+  font: 19px/1 system-ui,sans-serif;
+  pointer-events: none;
+}
+.fv-appearance select {
+  appearance: none;
+  cursor: pointer;
+  font: 600 13px/1 system-ui,sans-serif;
+  min-height: 38px;
+  padding: 0 13px 0 37px;
+  border: 1px solid currentColor;
+  border-radius: 24px;
+  color: inherit;
+  background: transparent;
+}
+.fv-appearance option { color: CanvasText; background: Canvas; }
+.fv-appearance select:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.fv-studio-bar .fv-back-link, [data-site="games"] .home-link { margin-left: auto; }
+@media (max-width: 720px) {
+  .fv-appearance { width: 44px; justify-content: center; }
+  .fv-appearance span { left: auto; }
+  .fv-appearance select { width: 44px; height: 44px; padding: 0; color: transparent; border-color: transparent; }
+  .fv-appearance:focus-within { outline: 2px solid currentColor; border-radius: 50%; }
+}
+@media (max-width: 450px) {
+  [data-site="home"] .header-inner { gap: 6px; }
+  [data-site="home"] .site-header nav { gap: 9px; }
+  [data-site="games"] .site-header, .fv-studio-bar .fv-studio-shell { flex-wrap: wrap; gap: 8px; }
+}
+html[data-appearance="light"] .fv-studio-bar,
+html[data-appearance="light"] .fv-studio-footer {
+  background: var(--fv-soft); color: var(--fv-text); border-color: var(--fv-rule);
+}
+html[data-appearance="light"] :is(.fv-studio-label,.fv-studio-contact address,.fv-studio-contact>span,.fv-studio-links a) { color: var(--fv-secondary); }
+html[data-appearance="light"] .fv-studio-contact strong { color: var(--fv-text); }
+html[data-appearance="light"] .fv-back-link { color: var(--fv-accent)!important; }
+html[data-appearance="light"] :is(.fv-studio-bar,.fv-studio-footer) a:hover { color: var(--fv-accent); }
+html[data-appearance="light"] .fv-media-gallery { background: var(--fv-soft); color: var(--fv-text); }
+html[data-appearance="light"] .fv-media-card { background: var(--fv-surface); border-color: var(--fv-rule); }
+html[data-appearance="light"] :is(.fv-media-kind,.fv-media-caption strong) { color: var(--fv-text); }
+html[data-appearance="light"] .fv-media-action { color: var(--fv-accent); }
+html[data-appearance="light"] .fv-media-eyebrow { color: var(--fv-accent)!important; }
+html[data-appearance="light"] .fv-media-heading h2 { color: var(--fv-text)!important; }
+html[data-appearance="light"] .fv-media-heading>p { color: var(--fv-secondary)!important; }
+
+/* Studio homepage */
+[data-site="home"][data-appearance="dark"] {
+  --paper: var(--fv-browser-color); --ink: var(--fv-text); --muted: var(--fv-secondary); --line: var(--fv-rule);
+}
+[data-site="home"][data-appearance="dark"] .site-header { color: var(--ink); }
+[data-site="home"][data-appearance="dark"] .games-section { background: #19231f; }
+[data-site="home"][data-appearance="dark"] .game-link { background: var(--fv-surface); }
+[data-site="home"][data-appearance="dark"] .studio-section { background: #302a35; }
+[data-site="home"][data-appearance="dark"] :is(.hero-eyebrow,.feature-genre,.feature-availability,.section-heading .eyebrow,.section-heading .eyebrow span,.game-meta,.contact-section .eyebrow,.contact-details>p:first-child,.waitlist-note,.beta-note,.copy-email) { color: var(--muted); }
+[data-site="home"][data-appearance="dark"] :is(.focus-item>p:last-child,.focus-label,.studio-intro .eyebrow) { color: #d7ccde; }
+[data-site="home"][data-appearance="dark"] :is(.waitlist-note a,.beta-note a,.copy-status,.game-details:hover) { color: var(--fv-accent); }
+[data-site="home"][data-appearance="dark"] :is(.button-dark,.game-link:hover .game-arrow,.copy-email:hover) { color: #19251e; background: #cfdfca; }
+
+/* Game portfolio and Rocket Car Landing */
+[data-site="games"][data-appearance="light"],
+[data-site="rocketcarlanding"][data-appearance="light"] {
+  --bg: #f2f6f7; --panel: #fff; --panel-soft: #e5eff2; --ink: #142b37;
+  --muted: #425d69; --cyan: #00637b; --accent: #38641b; --line: #c3d1d7;
+}
+:is([data-site="games"],[data-site="rocketcarlanding"])[data-appearance="light"] body {
+  background: linear-gradient(155deg,#deedf0,transparent 32rem),var(--bg);
+}
+[data-site="games"][data-appearance="light"] .game-copy>p { color: var(--muted); }
+[data-site="rocketcarlanding"][data-appearance="light"] :is(.launch-art figcaption,.help-strip,.social-section,.gameplay-feature,.gameplay-clip blockquote,kbd,.site-nav a:hover,.site-nav a[aria-current="page"],.button.secondary:hover) { background: var(--panel-soft); }
+[data-site="rocketcarlanding"][data-appearance="light"] .launch-art figcaption span { color: var(--muted); }
+[data-site="rocketcarlanding"][data-appearance="light"] .button:not(.secondary):hover { background: #00546a; }
+
+/* Word Porch */
+[data-site="word-porch"][data-appearance="dark"] {
+  --cream: #17241e; --paper: #203029; --green: #dcf0d8; --green-dark: #b7d8b4;
+  --muted: #bdcabb; --clay: #f1ad8c; --line: #506050; --sage: #314338;
+}
+[data-site="word-porch"][data-appearance="dark"] :is(.welcome-strip,.puzzle-demo,.destinations-section,.research-section,.download-section,.hero-tiles span) { background: var(--sage); }
+[data-site="word-porch"][data-appearance="dark"] :is(.word-board span,.quiet-button:disabled,.letter-tray button:hover:not(:disabled),.quiet-button:hover:not(:disabled)) { background: #425649; color: var(--green); }
+[data-site="word-porch"][data-appearance="dark"] .word-board .found span { background: #5e765a; color: white; }
+[data-site="word-porch"][data-appearance="dark"] :is(.postmark,.demo-footnote) { color: var(--muted); }
+[data-site="word-porch"][data-appearance="dark"] .keepsake-photo>span { color: #fffdf6; }
+[data-site="word-porch"][data-appearance="dark"] .platform[href] .platform-status { color: var(--paper); }
+
+/* Arrow Neon */
+[data-site="arrow-neon"][data-appearance="light"] {
+  --bg: #faf5ef; --panel: #fffcf7; --ink: #312333; --muted: #615461;
+  --amber: #8d401b; --pink: #863352; --line: #d7c9ce;
+}
+[data-site="arrow-neon"][data-appearance="light"] .hero:before { background: linear-gradient(90deg,#faf5ef 20%,#faf5eff0 42%,#faf5ef66),linear-gradient(0deg,var(--bg),transparent 35%); }
+[data-site="arrow-neon"][data-appearance="light"] .story-shade { background: linear-gradient(90deg,#faf5effc 15%,#faf5efe8 47%,#faf5ef73); }
+[data-site="arrow-neon"][data-appearance="light"] :is(.journey-section,.demo,.journey-card,.japan-card,.mood-visual,.app-store-pending) { background: #efe7e4; }
+[data-site="arrow-neon"][data-appearance="light"] :is(.legal-card p,.legal-card li,.site-header nav,.platform-note,.platform-note span,.hero-description,.hero-game figcaption,.hero-bottom,.demo-status,.demo-note,.quiet-button,.journey-label,.image-label,.section-copy .small-copy,.mood-features li,.story-copy>p:not(.eyebrow),.art-note,.site-footer p,.site-footer>div,.site-footer p a) { color: var(--muted); }
+[data-site="arrow-neon"][data-appearance="light"] .brand { background: #211d26; border-radius: 8px; padding-inline: 8px; }
+[data-site="arrow-neon"][data-appearance="light"] :is(.button,.skip-link) { color: #fff; }
+[data-site="arrow-neon"][data-appearance="light"] .button:hover { background: #733719; }
+
+/* Hurricane Hero mixes dark and light sections in its original design. */
+[data-site="hurricanehero"][data-appearance="light"] {
+  --navy: #f1f6f7; --navy2: #e2edf0; --ink: #173847; --muted: #476473;
+  --mint: #206644; --ice: #125771; --yellow: #80550d; --line: #c6d7d9;
+}
+[data-site="hurricanehero"][data-appearance="light"] body { color: var(--ink); }
+[data-site="hurricanehero"][data-appearance="light"] .hero-shell { background: radial-gradient(ellipse at 77% 43%,#d3e8e8,transparent 60%); }
+[data-site="hurricanehero"][data-appearance="light"] :is(.history,.platforms,.floating,.challenge-banner) { background: #e1eeee; }
+[data-site="hurricanehero"][data-appearance="light"] :is(.storm-card,.platform-card,.platform-card.apple,.header-cta) { background: #fff; }
+[data-site="hurricanehero"][data-appearance="light"] :is(.header-cta,.history-metrics strong,.footer strong,.nav a:hover,.footer a:hover) { color: var(--ink); }
+[data-site="hurricanehero"][data-appearance="light"] :is(.nav,.brand-name small,.subtitle,.hero-description,.platform-note,.platform-note .sep,.floating small,.art-note,.scroll-hint,.stat small,.history-top p,.history-metrics,.storm-year,.storm-type,.storm-card p,.history-footnote,.platform-intro,.platform-card p,.platform-state,.platform-small,.faq h2,.faq details p,.footer,.legal,.challenge-banner p,.challenge-action small) { color: var(--muted); }
+[data-site="hurricanehero"][data-appearance="dark"] :is(.light,.learning,.social-section) { background: #102d3c; color: #f1f7f6; --muted: #bdd1ce; }
+[data-site="hurricanehero"][data-appearance="dark"] :is(.light,.learning,.social-section) :is(.section-intro,.learning-copy p,.screen-caption,.learning-tags,.share-status,.screen-tabs button:not([aria-selected="true"])) { color: #bcd3cb; }
+[data-site="hurricanehero"][data-appearance="dark"] .learning p { color: #c7dfd6; }
+[data-site="hurricanehero"][data-appearance="dark"] :is(.lesson-bubble,.visual-sticker) { color: #143854; }
+[data-site="storm-doc"][data-appearance="dark"] { background: #132723; color: #e3f2ea; }
+[data-site="storm-doc"][data-appearance="dark"] main { background: #20342f; border-color: #50675c; }
+[data-site="storm-doc"][data-appearance="dark"] main :is(p,li,.eyebrow,.date) { color: #c0d3c8; }
+[data-site="storm-doc"][data-appearance="dark"] main a { color: #a0e0cb; }
+[data-site="storm-doc"][data-appearance="dark"] .notice { background: #463e28; color: #f4df9e; }
+[data-site="word-porch"][data-appearance="dark"] .comfort-section { background: #2d4035; color: var(--green); }
+[data-site="word-porch"][data-appearance="dark"] .comfort-list p { color: var(--muted); }
+[data-site="home"][data-appearance="dark"] .focus-icon { color: #c3aacb; }
+[data-site="hurricanehero"][data-appearance="dark"] .platform-note .sep { color: #98b4c2; }
+[data-site="hurricanehero"][data-appearance="light"] .screen-caption { color: #45685a; }
+[data-site="hurricanehero"][data-appearance="light"] .platform-small .heart { color: #974d35; }
+[data-site="home"][data-appearance="dark"] .art-index { background: #25352e; color: #e8f1e9; }
