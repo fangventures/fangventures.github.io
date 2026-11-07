@@ -16,8 +16,8 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="assets/fangventures.png">
   <link rel="preload" href="assets/fonts/outfit-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script src="script.js?v=2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,37 +32,16 @@
       <div class="hero-copy">
         <p class="eyebrow hero-eyebrow">Game Studio &amp; Consulting</p>
         <h1 id="hero-heading">We create games that make life better.</h1>
-        <p class="hero-intro">Our studio also builds apps, explores frontier AI, and invests in bold ideas.</p>
+        <p class="hero-intro">We build apps and advise teams on software development.</p>
         <div class="hero-actions"><a class="button button-dark" href="#games">Find your next game <span aria-hidden="true">↘</span></a><a class="quiet-link" href="#studio">A little about us <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="featured-games" aria-label="Explore our game worlds">
-        <div class="feature-bottom"><span>A few worlds we’re building.</span><div class="feature-tabs" id="feature-tabs" role="tablist" aria-label="Featured games">
-          <button type="button" id="tab-rocket" role="tab" data-feature-tab data-title="Rocket Car Landing" aria-controls="feature-rocket" aria-selected="true" tabindex="0" aria-label="Rocket Car Landing">01</button>
-          <button type="button" id="tab-word" role="tab" data-feature-tab data-title="Word Porch" aria-controls="feature-word" aria-selected="false" tabindex="-1" aria-label="Word Porch">02</button>
-          <button type="button" id="tab-arrow" role="tab" data-feature-tab data-title="Arrow Neon" aria-controls="feature-arrow" aria-selected="false" tabindex="-1" aria-label="Arrow Neon">03</button>
-          <button type="button" id="tab-hurricane" role="tab" data-feature-tab data-title="Hurricane Hero" aria-controls="feature-hurricane" aria-selected="false" tabindex="-1" aria-label="Hurricane Hero">04</button>
-        </div></div>
         <div class="feature-stage">
-          <div class="feature-panel feature-rocket" id="feature-rocket" role="tabpanel" aria-labelledby="tab-rocket">
+          <div class="feature-panel feature-rocket" id="feature-rocket" role="region" aria-label="Featured game: Rocket Car Landing">
             <img class="feature-cover" src="/rocketcarlanding/assets/launch-hero.jpg" alt="A silver rocket car soaring toward a glowing landing pad at night" width="1920" height="823" fetchpriority="high" decoding="async">
             <div class="feature-info"><div><p class="feature-genre">Physics · Arcade</p><h2><a class="feature-title-link" href="/rocketcarlanding/" aria-label="Explore Rocket Car Landing">Rocket Car Landing</a></h2><p class="feature-availability">Free on iPhone &amp; iPad</p></div><a class="install-badge" href="https://apps.apple.com/us/app/rocket-car-landing/id6826474921" target="_blank" rel="noopener noreferrer" aria-label="Download Rocket Car Landing on the App Store"><img src="/assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Download on the</span><strong>App Store</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
           </div>
-          <div class="feature-panel feature-word" id="feature-word" role="tabpanel" aria-labelledby="tab-word" hidden>
-            <img class="feature-cover" src="assets/games/word-porch-san-francisco.webp" alt="Word Porch’s sunny terrace overlooking the Golden Gate Bridge" width="1400" height="933" loading="lazy">
-            <span class="feature-badge">A little escape, on your terms.</span>
-            <div class="feature-info"><div><p class="feature-genre">Words · Travel</p><h2><a class="feature-title-link" href="/word-porch/" aria-label="Explore Word Porch">Word Porch</a></h2></div><a class="install-badge" href="https://testflight.apple.com/join/Tb4BSbqM" target="_blank" rel="noopener noreferrer" aria-label="Install Word Porch beta with TestFlight"><img src="assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Install beta on</span><strong>TestFlight</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
-          </div>
-          <div class="feature-panel feature-arrow" id="feature-arrow" role="tabpanel" aria-labelledby="tab-arrow" hidden>
-            <img class="feature-cover" src="assets/games/arrow-neon-tokyo.webp" alt="Arrow Neon’s glowing arrows and neon-lit Tokyo riders" width="1672" height="941" loading="lazy" decoding="async">
-            <div class="feature-info"><div><p class="feature-genre">Puzzle · Adventure</p><h2><a class="feature-title-link" href="/arrow-neon/" aria-label="Explore Arrow Neon">Arrow Neon</a></h2></div><a class="install-badge" href="https://testflight.apple.com/join/E2HkEDJU" target="_blank" rel="noopener noreferrer" aria-label="Install Arrow Neon beta with TestFlight"><img src="assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Install beta on</span><strong>TestFlight</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
-          </div>
-          <div class="feature-panel feature-hurricane" id="feature-hurricane" role="tabpanel" aria-labelledby="tab-hurricane" hidden>
-            <span class="feature-badge">A small storm. A whole world.</span>
-            <img class="feature-globe" src="assets/games/hurricane-hero-globe.svg" alt="Hurricane Hero’s illustrated globe with cities and swirling storms" width="1000" height="1000" loading="lazy" decoding="async">
-            <div class="feature-info"><div><p class="feature-genre">Simulation · Strategy</p><h2><a class="feature-title-link" href="/hurricanehero/" aria-label="Explore Hurricane Hero">Hurricane Hero</a></h2></div><a class="install-badge" href="https://testflight.apple.com/join/ZbZykTgM" target="_blank" rel="noopener noreferrer" aria-label="Install Hurricane Hero beta with TestFlight"><img src="assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Install beta on</span><strong>TestFlight</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
-          </div>
         </div>
-        <p class="sr-only" id="feature-status" role="status"></p>
       </div>
     </section>
     <section class="games-section" id="games" aria-labelledby="games-heading">
@@ -92,8 +71,7 @@
       <div class="studio-intro"><div><p class="eyebrow">The studio &amp; beyond</p><h2 id="studio-heading">Playful at heart.<br>Curious by nature.</h2></div><span class="studio-spark" aria-hidden="true">✳</span></div>
       <div class="focus-grid">
         <div class="focus-item"><span class="focus-icon" aria-hidden="true">↗</span><h3>We make.</h3><p class="focus-label">Game Studio</p><p>Games and apps that make life better. Small moments worth coming back to.</p></div>
-        <div class="focus-item"><span class="focus-icon" aria-hidden="true">✳</span><h3>We explore.</h3><p class="focus-label">AI Research Lab</p><p>Frontier AI, open minds, and a healthy curiosity about what comes next.</p></div>
-        <div class="focus-item"><span class="focus-icon" aria-hidden="true">↗</span><h3>We back.</h3><p class="focus-label">Investments</p><p>Bold ideas and the people imagining a better future.</p></div>
+        <div class="focus-item"><span class="focus-icon" aria-hidden="true">↗</span><h3>We advise.</h3><p class="focus-label">Software Consulting</p><p>We draw on our experience shipping software to help teams decide what to build and how to deliver it.</p></div>
       </div>
     </section>
     <section class="contact-section wrap" id="contact" aria-labelledby="contact-heading">
@@ -101,6 +79,6 @@
       <div class="contact-details"><p>A game, an idea, or just a hello.<br>We’d love to hear from you.</p><div class="email-row"><a id="email-link" href="mailto:FangVentures.HQ@gmail.com">FangVentures.HQ@gmail.com <span aria-hidden="true">↗</span></a><button class="copy-email" id="copy-email" type="button" aria-label="Copy email address" title="Copy email address"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg></button></div><p class="copy-status" id="copy-status" role="status"></p><div class="social-links"><a href="https://x.com/fangventures" target="_blank" rel="noopener noreferrer">X / Twitter <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/company/fangventures/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-top"><a class="brand" href="#top" aria-label="Fang Ventures home"><img src="assets/fangventures.png" alt="Fang Ventures" width="600" height="600" loading="lazy"></a><p>A little curiosity.<br>A lot of possibility.</p><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div><div class="wrap footer-bottom"><p>© <span id="year">2026</span> Fang Ventures</p></div></footer>
+  <footer class="site-footer"><div class="wrap footer-top"><a class="brand" href="#top" aria-label="Fang Ventures home"><img src="assets/fangventures.png" alt="Fang Ventures" width="600" height="600" loading="lazy"></a><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div><div class="wrap footer-bottom"><p>© <span id="year">2026</span> Fang Ventures</p></div></footer>
 </body>
 </html>

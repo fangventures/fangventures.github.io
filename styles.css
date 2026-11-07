@@ -109,7 +109,7 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
 .studio-intro .eyebrow { margin-bottom: 19px; color: #706577; }
 .studio-intro h2 { font-size: clamp(42px, 4vw, 55px); }
 .studio-spark { color: #bf9bc6; font-size: 102px; line-height: 1; margin-right: 20px; }
-.focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px; margin-top: 42px; }
+.focus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 35px; margin-top: 42px; }
 .focus-item { position: relative; padding: 23px 0 0; border-top: 1px solid #cfc2d6; }
 .focus-icon { position: absolute; top: 27px; right: 0; color: #85728e; font-size: 22px; }
 .focus-item h3 { font-family: var(--head); font-size: 27px; font-weight: 500; letter-spacing: -.035em; }
