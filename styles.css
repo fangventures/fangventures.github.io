@@ -328,3 +328,39 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   .feature-info .install-badge { width: 154px; }
   .feature-rocket .feature-icon { width: 34%; top: 30%; }
 }
+
+.feature-rocket {
+  display: flex;
+  flex-direction: column;
+  background: #071524;
+}
+.feature-rocket .feature-cover {
+  flex: 1 1 0;
+  min-height: 0;
+  height: 0;
+}
+.feature-rocket .feature-info {
+  position: static;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 0;
+  background: var(--paper);
+}
+.feature-rocket .feature-info > div:first-child { flex: none; }
+.feature-rocket .feature-availability { margin-top: 3px; font-size: 12px; }
+.feature-rocket .install-badge {
+  width: 100%;
+  min-height: 72px;
+  padding: 10px 18px;
+  gap: 14px;
+}
+.feature-rocket .install-badge img { width: 32px; height: 38px; }
+.feature-rocket .badge-copy > span { font-size: 12px; }
+.feature-rocket .badge-copy > strong { font-size: 28px; }
+.feature-rocket .badge-arrow { font-size: 22px; }
+@media (max-width: 650px) {
+  .hero .featured-games { order: -1; }
+}

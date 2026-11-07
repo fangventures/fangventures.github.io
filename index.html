@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="assets/fangventures.png">
   <link rel="preload" href="assets/fonts/outfit-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -38,20 +38,25 @@
         <p class="hero-location"><span class="location-dot" aria-hidden="true"></span> Independent minds. Based in Austin, Texas.</p>
       </div>
       <div class="featured-games" aria-label="Explore our game worlds">
-        <div class="feature-bottom"><span>A few worlds we’re building.</span><div class="feature-tabs" id="feature-tabs" role="tablist" aria-label="Featured games"><button type="button" id="tab-word" role="tab" data-feature-tab data-title="Word Porch" aria-controls="feature-word" aria-selected="true" tabindex="0" aria-label="Word Porch">01</button><button type="button" id="tab-arrow" role="tab" data-feature-tab data-title="Arrow Neon" aria-controls="feature-arrow" aria-selected="false" tabindex="-1" aria-label="Arrow Neon">02</button><button type="button" id="tab-rocket" role="tab" data-feature-tab data-title="Rocket Car Landing" aria-controls="feature-rocket" aria-selected="false" tabindex="-1" aria-label="Rocket Car Landing">03</button><button type="button" id="tab-hurricane" role="tab" data-feature-tab data-title="Hurricane Hero" aria-controls="feature-hurricane" aria-selected="false" tabindex="-1" aria-label="Hurricane Hero">04</button></div></div>
+        <div class="feature-bottom"><span>A few worlds we’re building.</span><div class="feature-tabs" id="feature-tabs" role="tablist" aria-label="Featured games">
+          <button type="button" id="tab-rocket" role="tab" data-feature-tab data-title="Rocket Car Landing" aria-controls="feature-rocket" aria-selected="true" tabindex="0" aria-label="Rocket Car Landing">01</button>
+          <button type="button" id="tab-word" role="tab" data-feature-tab data-title="Word Porch" aria-controls="feature-word" aria-selected="false" tabindex="-1" aria-label="Word Porch">02</button>
+          <button type="button" id="tab-arrow" role="tab" data-feature-tab data-title="Arrow Neon" aria-controls="feature-arrow" aria-selected="false" tabindex="-1" aria-label="Arrow Neon">03</button>
+          <button type="button" id="tab-hurricane" role="tab" data-feature-tab data-title="Hurricane Hero" aria-controls="feature-hurricane" aria-selected="false" tabindex="-1" aria-label="Hurricane Hero">04</button>
+        </div></div>
         <div class="feature-stage">
-          <div class="feature-panel feature-word" id="feature-word" role="tabpanel" aria-labelledby="tab-word">
-            <img class="feature-cover" src="assets/games/word-porch-san-francisco.webp" alt="Word Porch’s sunny terrace overlooking the Golden Gate Bridge" width="1400" height="933" fetchpriority="high">
+          <div class="feature-panel feature-rocket" id="feature-rocket" role="tabpanel" aria-labelledby="tab-rocket">
+            <img class="feature-cover" src="/rocketcarlanding/assets/launch-hero.jpg" alt="A silver rocket car soaring toward a glowing landing pad at night" width="1920" height="823" fetchpriority="high" decoding="async">
+            <div class="feature-info"><div><p class="feature-genre">Physics · Arcade</p><h2><a class="feature-title-link" href="/rocketcarlanding/" aria-label="Explore Rocket Car Landing">Rocket Car Landing</a></h2><p class="feature-availability">Free on iPhone &amp; iPad</p></div><a class="install-badge" href="https://apps.apple.com/us/app/rocket-car-landing/id6826474921" target="_blank" rel="noopener noreferrer" aria-label="Download Rocket Car Landing on the App Store"><img src="/assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Download on the</span><strong>App Store</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="feature-panel feature-word" id="feature-word" role="tabpanel" aria-labelledby="tab-word" hidden>
+            <img class="feature-cover" src="assets/games/word-porch-san-francisco.webp" alt="Word Porch’s sunny terrace overlooking the Golden Gate Bridge" width="1400" height="933" loading="lazy">
             <span class="feature-badge">A little escape, on your terms.</span>
             <div class="feature-info"><div><p class="feature-genre">Words · Travel</p><h2><a class="feature-title-link" href="/word-porch/" aria-label="Explore Word Porch">Word Porch</a></h2></div><a class="install-badge" href="https://testflight.apple.com/join/Tb4BSbqM" target="_blank" rel="noopener noreferrer" aria-label="Install Word Porch beta with TestFlight"><img src="assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Install beta on</span><strong>TestFlight</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
           </div>
           <div class="feature-panel feature-arrow" id="feature-arrow" role="tabpanel" aria-labelledby="tab-arrow" hidden>
             <img class="feature-cover" src="assets/games/arrow-neon-tokyo.webp" alt="Arrow Neon’s glowing arrows and neon-lit Tokyo riders" width="1672" height="941" loading="lazy" decoding="async">
             <div class="feature-info"><div><p class="feature-genre">Puzzle · Adventure</p><h2><a class="feature-title-link" href="/arrow-neon/" aria-label="Explore Arrow Neon">Arrow Neon</a></h2></div><a class="install-badge" href="https://testflight.apple.com/join/E2HkEDJU" target="_blank" rel="noopener noreferrer" aria-label="Install Arrow Neon beta with TestFlight"><img src="assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Install beta on</span><strong>TestFlight</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
-          </div>
-          <div class="feature-panel feature-rocket" id="feature-rocket" role="tabpanel" aria-labelledby="tab-rocket" hidden>
-            <img class="feature-cover" src="/rocketcarlanding/assets/vegas-night.jpg" alt="Aero approaching the landing pad in Las Vegas at night" width="1000" height="750" loading="lazy" decoding="async">
-            <div class="feature-info"><div><p class="feature-genre">Physics · Arcade</p><h2><a class="feature-title-link" href="/rocketcarlanding/" aria-label="Explore Rocket Car Landing">Rocket Car Landing</a></h2><p class="feature-availability">Now on the App Store</p></div><a class="install-badge" href="https://apps.apple.com/us/app/rocket-car-landing/id6826474921" target="_blank" rel="noopener noreferrer" aria-label="Download Rocket Car Landing on the App Store"><img src="/assets/icons/apple.svg" alt="" width="32" height="38" aria-hidden="true"><span class="badge-copy"><span>Download on the</span><strong>App Store</strong></span><span class="badge-arrow" aria-hidden="true">↗</span></a></div>
           </div>
           <div class="feature-panel feature-hurricane" id="feature-hurricane" role="tabpanel" aria-labelledby="tab-hurricane" hidden>
             <span class="feature-badge">A small storm. A whole world.</span>
