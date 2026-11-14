@@ -378,3 +378,13 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
 @media (max-width: 650px) {
   .hero .featured-games { order: -1; }
 }
+
+/* Team discovery, with room for every navigation item on small screens. */
+.studio-team { margin-top: 32px; padding-top: 24px; border-top: 1px solid #cfc2d6; }
+.studio-team > p { color: var(--ink); font-size: 14px; line-height: 1.7; }
+.studio-team-links { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 16px; }
+@media (max-width: 650px) {
+  [data-site="home"] .header-inner { flex-wrap: wrap; padding-block: 12px; gap: 4px; }
+  [data-site="home"] .site-header nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; }
+  [data-site="home"] .site-header nav a { min-height: 44px; }
+}
