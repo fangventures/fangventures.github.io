@@ -1,0 +1,150 @@
+/* Team page: shared studio typography, with room for the people and their art. */
+[data-site="team"] { --team-soft: #ecefe7; --team-card: #fffdf8; --team-lilac: #eee8f2; --team-lilac-ink: #615369; }
+[data-site="team"][data-appearance="dark"] { --paper: var(--fv-browser-color); --ink: var(--fv-text); --muted: var(--fv-secondary); --line: var(--fv-rule); --team-soft: #19231f; --team-card: #202c29; --team-lilac: #302a35; --team-lilac-ink: #d7ccde; }
+[data-site="team"] .site-header { color: #f7f5ef; }
+[data-site="team"] .site-header a[aria-current="page"] { color: #f9aa95; text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 2px; }
+.team-hero { display: grid; grid-template-columns: .84fr 1.16fr; align-items: center; gap: 48px; padding-block: 66px 72px; }
+.team-hero .eyebrow { color: var(--muted); margin-bottom: 25px; }
+.team-hero .eyebrow > span { padding-inline: 8px; color: var(--coral); }
+.team-hero h1 { font-size: clamp(58px, 6.4vw, 88px); line-height: 1.01; letter-spacing: -.055em; }
+.team-intro { max-width: 430px; color: var(--muted); margin-top: 24px; font-size: 16px; line-height: 1.8; }
+.team-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 22px; margin-top: 28px; }
+.studio-portrait { margin: 0; min-width: 0; }
+.studio-portrait > img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; background: var(--team-soft); }
+.studio-portrait figcaption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 16px 3px 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.studio-portrait figcaption > span:last-child { color: var(--ink); }
+.people-section { padding-block: 72px 78px; background: var(--team-soft); border-block: 1px solid var(--line); }
+.team-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 34px; }
+.team-section-heading .eyebrow { color: var(--muted); margin-bottom: 16px; }
+.team-section-heading h2 { font-size: clamp(38px, 4.1vw, 57px); }
+.team-section-heading > p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.people-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.person { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--team-card); }
+.person > img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; background: var(--paper); }
+.person-copy { padding: 19px 19px 21px; }
+.person h3 { font-family: var(--head); font-size: 30px; font-weight: 500; line-height: 1.15; letter-spacing: -.035em; }
+.person p { margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.join-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; padding: 26px; border-radius: 18px; color: var(--ink); background: var(--team-lilac); }
+.join-spark { font-size: 86px; line-height: 1; color: #a97ab3; }
+.join-card .eyebrow { color: var(--team-lilac-ink); margin-block: 24px 12px; font-size: 10px; }
+.join-card h3 { font-family: var(--head); font-size: clamp(28px, 2.8vw, 38px); line-height: 1.12; font-weight: 500; letter-spacing: -.04em; }
+.join-card .quiet-link { margin-top: 15px; align-items: flex-start; line-height: 1.6; }
+.companions-section { padding-block: 72px; }
+.companions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.companion { display: flex; align-items: center; gap: 28px; padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: var(--team-card); }
+.companion > img { flex: none; width: 45%; max-width: 220px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 16px; }
+.companion .eyebrow { color: var(--muted); font-size: 10px; }
+.companion h3 { font-family: var(--head); font-size: clamp(34px, 3.4vw, 48px); font-weight: 500; line-height: 1.1; letter-spacing: -.045em; margin-block: 10px; }
+.companion div > p:last-child { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.careers-section { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; margin-bottom: 78px; padding: 54px; border-radius: 26px; background: var(--team-lilac); }
+.careers-intro > .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--team-lilac-ink); margin-bottom: 23px; }
+.hiring-dot { width: 7px; height: 7px; border-radius: 50%; background: #4c7953; }
+.careers-intro h2 { font-size: clamp(38px, 4.2vw, 58px); line-height: 1.08; }
+.careers-intro > p:last-child { margin-top: 24px; max-width: 360px; color: var(--team-lilac-ink); font-size: 15px; line-height: 1.8; }
+.opening > .eyebrow { color: var(--team-lilac-ink); }
+.opening h3 { font-family: var(--head); font-size: 48px; font-weight: 500; letter-spacing: -.04em; margin-block: 10px 17px; }
+.opening > p:not(.eyebrow,.application-email) { font-size: 15px; line-height: 1.8; color: var(--team-lilac-ink); }
+.application-note { margin-block: 26px; padding-block: 24px; border-block: 1px solid color-mix(in srgb, var(--team-lilac-ink) 35%, transparent); }
+.application-note h4 { margin: 0 0 10px; font-family: var(--head); font-weight: 550; font-size: 24px; line-height: 1.3; letter-spacing: -.025em; }
+.application-note p { color: var(--team-lilac-ink); font-size: 14px; line-height: 1.8; }
+.application-note .quiet-link { margin-top: 10px; }
+.apply-button { margin-top: 18px; min-width: 200px; }
+.application-email { margin-top: 14px; font-size: 12px; color: var(--team-lilac-ink); overflow-wrap: anywhere; line-height: 1.7; }
+.application-email a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.team-footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; font-size: 12px; }
+.team-footer-links a:hover { color: #f9aa95; }
+[data-site="team"][data-appearance="dark"] .button-dark { color: #19251e; background: #cfdfca; }
+[data-site="team"][data-appearance="dark"] .button-dark:hover { background: #e3efdf; }
+[data-site="team"][data-appearance="dark"] .hiring-dot { background: #a3cd9c; }
+[data-site="team"][data-appearance="dark"] .join-spark { color: #c4a1ce; }
+[data-site="team"][data-appearance="dark"] :is(a, button):focus-visible { outline-color: var(--fv-accent); }
+@media (max-width: 1120px) {
+  .team-hero { gap: 32px; }
+  .team-hero h1 { font-size: 6.4vw; }
+  .team-intro { font-size: 14px; }
+  .people-grid { gap: 18px; }
+  .person-copy { padding-inline: 15px; }
+  .join-card { padding: 22px; }
+  .companion { gap: 20px; padding: 20px; }
+  .careers-section { gap: 40px; padding: 40px; }
+}
+@media (max-width: 900px) {
+  .team-hero { grid-template-columns: 1fr; gap: 36px; padding-block: 48px 52px; }
+  .team-hero h1 { font-size: clamp(64px, 10vw, 88px); }
+  .team-intro { max-width: 590px; font-size: 16px; }
+  .studio-portrait > img { max-height: 530px; }
+  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .person-copy { padding: 20px; }
+  .join-card { padding: 28px; }
+  .join-card h3 { font-size: 40px; max-width: 220px; }
+  .companion { gap: 16px; padding: 16px; }
+  .companion h3 { font-size: 35px; }
+  .companion div > p:last-child { font-size: 12px; }
+  .careers-section { grid-template-columns: 1fr; gap: 36px; }
+  .careers-intro h2 { font-size: 52px; }
+  .careers-intro h2 br { display: none; }
+  .careers-intro > p:last-child { max-width: 540px; }
+  .opening { border-top: 1px solid color-mix(in srgb, var(--team-lilac-ink) 35%, transparent); padding-top: 30px; }
+}
+@media (max-width: 650px) {
+  [data-site="team"] .header-inner { gap: 8px; }
+  [data-site="team"] .site-header nav { gap: 12px; }
+  [data-site="team"] .site-header nav .nav-contact { gap: 5px; }
+  .team-hero { padding-block: 38px 42px; gap: 30px; }
+  .team-hero .eyebrow { margin-bottom: 21px; font-size: 9px; }
+  .team-hero h1 { font-size: clamp(54px, 13.6vw, 76px); }
+  .team-intro { font-size: 14px; margin-top: 20px; }
+  .team-actions { margin-top: 22px; }
+  .studio-portrait > img { border-radius: 18px; }
+  .studio-portrait figcaption { font-size: 9px; padding-top: 12px; }
+  .people-section { padding-block: 42px 45px; }
+  .team-section-heading { display: block; margin-bottom: 27px; }
+  .team-section-heading .eyebrow { font-size: 9px; }
+  .team-section-heading h2 { font-size: 40px; }
+  .team-section-heading > p { margin-top: 18px; font-size: 13px; }
+  .team-section-heading > p br { display: none; }
+  .people-grid { gap: 20px 16px; }
+  .person { border-radius: 14px; }
+  .person-copy { padding: 15px 13px 17px; }
+  .person h3 { font-size: 27px; }
+  .person p { font-size: 12px; }
+  .join-card { padding: 19px; border-radius: 14px; min-height: 250px; }
+  .join-spark { font-size: 58px; }
+  .join-card .eyebrow { font-size: 8px; margin-top: 20px; }
+  .join-card h3 { font-size: 28px; }
+  .join-card .quiet-link { font-size: 10px; margin-top: 10px; }
+  .companions-section { padding-block: 43px; }
+  .companions-grid { grid-template-columns: 1fr; gap: 18px; }
+  .companion { padding: 18px; gap: 25px; }
+  .companion > img { width: 42%; border-radius: 12px; }
+  .companion h3 { font-size: 39px; }
+  .companion div > p:last-child { font-size: 14px; }
+  .careers-section { padding: 29px 24px; margin-bottom: 43px; border-radius: 20px; gap: 26px; }
+  .careers-intro h2 { font-size: 39px; }
+  .careers-intro > p:last-child { font-size: 14px; margin-top: 20px; }
+  .opening h3 { font-size: 42px; }
+  .opening > p:not(.eyebrow,.application-email) { font-size: 14px; }
+  .application-note h4 { font-size: 23px; }
+  .application-note p { font-size: 13px; }
+  .apply-button { width: 100%; }
+  [data-site="team"] .footer-top { flex-wrap: wrap; gap: 24px; }
+  .team-footer-links { gap: 20px; font-size: 11px; }
+  [data-site="team"] .footer-bottom { flex-wrap: wrap; gap: 12px; }
+}
+@media (max-width: 390px) {
+  [data-site="team"] .header-inner { flex-wrap: wrap; padding-block: 10px; }
+  [data-site="team"] .site-header nav { width: 100%; justify-content: space-between; gap: 10px; font-size: 11px; }
+  .people-grid { grid-template-columns: 1fr; }
+  .person-copy { padding: 19px; }
+  .person p { font-size: 13px; }
+  .join-card { min-height: 270px; padding: 25px; }
+  .join-card h3 { font-size: 35px; max-width: none; }
+  .join-card .quiet-link { font-size: 12px; }
+  .careers-section { padding-inline: 20px; }
+  .careers-intro h2 { font-size: 35px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-site="team"] .button { transition: none; }
+  [data-site="team"] .button:hover { transform: none; }
+}
