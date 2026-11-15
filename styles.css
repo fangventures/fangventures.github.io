@@ -388,3 +388,8 @@ h2 { font-family: var(--head); font-size: clamp(43px, 4.65vw, 64px); line-height
   [data-site="home"] .site-header nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; }
   [data-site="home"] .site-header nav a { min-height: 44px; }
 }
+
+/* Keep the complete Rocket Loader title illustration visible. */
+.art-loader { background: #071623; }
+.art-loader .cover-art { object-fit: contain; }
+@media (hover: hover) { .game-link:hover .art-loader .cover-art { transform: none; } }
