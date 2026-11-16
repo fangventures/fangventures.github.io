@@ -15,6 +15,7 @@ Fang Ventures builds games and apps that make life better, explores frontier AI,
 - [Portfolio](https://fang.ventures/games/)
 - [Team & careers](https://fang.ventures/team/) — We’re hiring for Growth.
 - [Rocket Car Landing](https://fang.ventures/rocketcarlanding/) — [Available on the App Store](https://apps.apple.com/us/app/rocket-car-landing/id6826474921)
+- [Rocket Loader: 3D Cargo Sort](https://fang.ventures/rocket-loader/) — Coming soon. [Follow on X for updates](https://x.com/fangventures).
 - [Hurricane Hero](https://fang.ventures/hurricanehero/)
 - [Arrow Neon](https://fang.ventures/arrow-neon/)
 - [Word Porch](https://fang.ventures/word-porch/) — [Available on the App Store](https://apps.apple.com/us/app/word-porch/id6826064587)
