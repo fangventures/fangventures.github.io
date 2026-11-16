@@ -151,3 +151,7 @@ h1 span { color: var(--teal); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Shared game-information links remain reachable at phone widths. */
+.footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; }
+@media (max-width: 650px) { .page-footer { flex-direction: column; align-items: flex-start; gap: 8px; } .footer-links { gap: 2px 20px; } }
