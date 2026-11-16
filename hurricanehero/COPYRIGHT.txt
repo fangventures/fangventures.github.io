@@ -20,4 +20,4 @@ its embedded Hurricane Hero attribution does not identify its performer or compo
 
 Permissions contact: https://VictorFang.com
 
-Social preview update (2026-10-19): the existing Hurricane Hero artwork was edited with OpenAI image generation to display the updated game descriptor. Original artwork attribution and third-party notices remain applicable.
+Social preview update (2026-10-19): the existing Hurricane Hero artwork was edited to display the updated game descriptor. Original artwork attribution and third-party notices remain applicable.
